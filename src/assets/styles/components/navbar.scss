@@ -1,0 +1,25 @@
+.navbar {
+  direction: rtl;
+  background-color: $white;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+
+  &__logo {
+    flex-basis: 30%;
+    border-left: 1px solid rgba(0, 0, 0, 0.28);
+    text-align: center;
+
+    img {
+      height: 3rem;
+    }
+  }
+
+  &__pages {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis: 15%;
+    padding-right: 3rem;
+  }
+}
