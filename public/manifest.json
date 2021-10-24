@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "SemiLinkedIn",
+  "name": "An app like linkedIn",
   "icons": [
     {
       "src": "favicon.ico",

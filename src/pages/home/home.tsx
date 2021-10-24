@@ -1,7 +1,12 @@
 import React from "react";
+import SEO from "src/shared/components/SEO";
 
 const Home: React.FC = () => {
-  return <main className="homepage"></main>;
+  return (
+    <section className="home">
+      <SEO title="Home" />
+    </section>
+  );
 };
 
 export default Home;

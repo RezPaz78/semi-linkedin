@@ -1,0 +1,30 @@
+.tags {
+  background-color: $tags-bg-color;
+  flex-basis: 25%;
+  border-radius: 18px;
+  padding: 0.8rem 2.5rem 0.8rem 1.5rem;
+
+  &__heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    font-family: IranYekan;
+
+    &-title {
+      @include typographyStyle(0.8rem, normal, normal, $tags-title-color);
+    }
+
+    &-add {
+      height: 1.5rem;
+    }
+  }
+
+  &__items {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    direction: ltr;
+  }
+}

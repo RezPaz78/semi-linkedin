@@ -1,0 +1,28 @@
+.profile {
+  border-radius: 18px;
+  background-color: $white;
+  flex-basis: 20%;
+
+  &__banner {
+    height: 5rem;
+  }
+
+  &__info {
+    font-family: Roboto;
+    text-align: center;
+    transform: translateY(-1.5rem);
+
+    &-avatar {
+      height: 4rem;
+    }
+
+    &-name {
+      margin: 0.5rem 0;
+      @include typographyStyle(1rem, normal, normal, $black);
+    }
+
+    &-role {
+      @include typographyStyle(0.8rem, normal, normal, rgba(0, 0, 0, 0.46));
+    }
+  }
+}

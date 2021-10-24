@@ -1,7 +1,12 @@
 //base
-@import "./assets/styles/base/base","./assets/styles/base/mixins","./assets/styles/base/variables";
+@import "./assets/styles/base/base", "./assets/styles/base/mixins",
+  "./assets/styles/base/variables", "./assets/styles/base/fonts";
 
 // components
-@import "./assets/styles/components/navbar";
+@import "./assets/styles/components/layout/navbar",
+  "./assets/styles/components/layout/profile",
+  "./assets/styles/components/layout/layout",
+  "./assets/styles/components/layout/tags",
+  "./assets/styles/components/layout/tag";
 
 //pages
