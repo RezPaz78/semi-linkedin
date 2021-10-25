@@ -6,4 +6,8 @@
   width: 80%;
   margin: 0 auto;
   margin-top: 2rem;
+
+  &__profile-panel {
+    flex-basis: 25%;
+  }
 }

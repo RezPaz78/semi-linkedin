@@ -1,0 +1,43 @@
+.connection {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 1rem;
+
+  &__avatar {
+    height: 3rem;
+    border-radius: 50%;
+  }
+
+  &__info {
+    font-family: Roboto;
+    text-align: right;
+    width: 100%;
+    margin-right: 0.5rem;
+    margin-left: 1rem;
+
+    &-name {
+      margin-bottom: 0.3rem;
+      @include typographyStyle(1.1rem, bold, normal, $connections-color);
+    }
+
+    &-role {
+      @include typographyStyle(0.8em, normal, normal, $connections-color);
+    }
+  }
+
+  &__button {
+    border-radius: 8px;
+    border: 1px solid $blue-color;
+    background-color: transparent;
+    @include typographyStyle(0.7rem, bold, normal, $blue-color);
+    padding: 10px 12px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $blue-color;
+      color: $white;
+    }
+  }
+}

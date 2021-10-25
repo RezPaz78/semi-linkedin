@@ -1,0 +1,30 @@
+.connections {
+  border-radius: 16px;
+  background-color: $tags-bg-color;
+  text-align: center;
+  padding-top: 1rem;
+  font-family: IranYekan;
+
+  &__title {
+    margin-bottom: 1rem;
+    @include typographyStyle(0.9rem, bold, normal, $connections-color);
+  }
+
+  &__items {
+    padding: 0 1.2rem;
+  }
+
+  &__more {
+    border-top: 1px solid $connections-border-color;
+    @include typographyStyle(0.8rem, bold, normal, $blue-color);
+    padding: 0.7rem;
+    cursor: pointer;
+    border-radius: 0 0 16px 16px;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      background-color: $blue-color;
+      color: $white;
+    }
+  }
+}
