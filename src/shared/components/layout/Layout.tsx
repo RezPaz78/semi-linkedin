@@ -14,17 +14,17 @@ type Props = {
 
 const Layout: React.FC<Props> = ({ children }) => {
   return (
-    <>
+    <div className="body">
       <Navbar />
       <main className="layout">
-        <div className="layout__profile-panel">
+        <aside className="layout__profile-panel">
           <Profile />
           <Connections connections={ConnectionsData} />
-        </div>
+        </aside>
         {children}
         <Tags tags={TagData} />
       </main>
-    </>
+    </div>
   );
 };
 

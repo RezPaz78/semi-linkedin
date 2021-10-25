@@ -5,7 +5,7 @@ import { TagsProps } from "src/shared/components/layout/types";
 
 const Tags: React.FC<TagsProps> = ({ tags }) => {
   return (
-    <div className="tags">
+    <aside className="tags">
       <div className="tags__heading">
         <h3 className="tags__heading-title">هشتگ‌هایی که دنبال می‌کنید</h3>
         <img className="tags__heading-add" src={Add} alt="add" />
@@ -15,7 +15,7 @@ const Tags: React.FC<TagsProps> = ({ tags }) => {
           <Tag key={tag.id} title={tag.title} id={tag.id} />
         ))}
       </div>
-    </div>
+    </aside>
   );
 };
 
