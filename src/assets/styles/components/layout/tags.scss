@@ -3,6 +3,10 @@
   flex-basis: 22%;
   border-radius: 18px;
   padding: 0.8rem 2.5rem 0.8rem 1.5rem;
+  position: fixed;
+  z-index: 10;
+  left: 10%;
+  width: 17rem;
 
   &__heading {
     display: flex;

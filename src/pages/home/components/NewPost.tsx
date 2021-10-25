@@ -4,14 +4,21 @@ import { NewPostProps } from "src/pages/home/types";
 const NewPost: React.FC<NewPostProps> = ({ avatar }) => {
   return (
     <div className="newPost">
-      <img src={avatar} alt="avatar" />
-      <input type="text" />
-      <div>
-        <div>
-          <span>Photo</span>
-          <span>Video</span>
+      <img className="newPost__avatar" src={avatar} alt="avatar" />
+      <textarea
+        className="newPost__input"
+        placeholder="چیزی بنویس..."
+      />
+      <div className="newPost__footer">
+        <div className="newPost__footer_media">
+          <div className="newPost__footer_media-video">
+            <span>Video</span>
+          </div>
+          <div className="newPost__footer_media-photo">
+            <span>Photo</span>
+          </div>
         </div>
-        <button>ارسال</button>
+        <button className="newPost__footer-send">ارسال</button>
       </div>
     </div>
   );

@@ -1,3 +1,65 @@
 .newPost {
-  
+  background-color: $white;
+  border-radius: 18px;
+
+  &__avatar {
+    margin-top: 1rem;
+    margin-right: 1.5rem;
+    height: 3rem;
+    border-radius: 50%;
+  }
+
+  &__input {
+    font-family: IranYekan;
+    display: block;
+    width: 80%;
+    margin: 1rem auto;
+    border: none;
+    @include typographyStyle(1rem, bold, normal, $black);
+
+    &:focus {
+      outline: none;
+    }
+
+    &::placeholder {
+      @include typographyStyle(1rem, normal, normal, $placeholder-color);
+    }
+  }
+
+  &__footer {
+    background-color: rgba(210, 240, 255, 0.41);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+
+    &_media {
+      font-family: Roboto;
+      flex-basis: 70%;
+      @include typographyStyle(1rem, normal, normal, $placeholder-color);
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+
+      &-video {
+        margin-left: 3rem;
+      }
+    }
+
+    &-send {
+      font-family: IranYekan;
+      background-color: $white;
+      @include typographyStyle(0.8rem, bold, normal, $blue-color);
+      border: 1px solid $blue-color;
+      border-radius: 8px;
+      padding: 5px 15px;
+      transition: all 0.2s ease-in-out;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $blue-color;
+        color: $white;
+      }
+    }
+  }
 }
