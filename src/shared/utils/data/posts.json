@@ -1,0 +1,28 @@
+[
+  {
+    "user": {
+      "name": "Reza Pazan",
+      "role": "Front-End Developer",
+      "avatar": "https://rezpaz78.github.io/static/media/reza.08e777ba.jpg"
+    },
+    "text": "نظرتونو برام بنویسید",
+    "media": [
+      "https://rezpaz78.github.io/static/media/reza.08e777ba.jpg",
+      "https://rezpaz78.github.io/static/media/reza.08e777ba.jpg"
+    ],
+    "isCompany": false,
+    "tags": [],
+    "likesCount": 99
+  },
+  {
+    "user": {
+      "name": "LinkedIn",
+      "role": "Internet Sunnyvale, CA",
+      "avatar": "https://rezpaz78.github.io/static/media/reza.08e777ba.jpg"
+    },
+    "text": "نظرتونو برام بنویسید",
+    "media": [],
+    "isCompany": true,
+    "tags": [{ "id": 0, "title": "hr" }]
+  }
+]

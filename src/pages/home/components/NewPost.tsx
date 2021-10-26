@@ -5,7 +5,8 @@ const NewPost: React.FC<NewPostProps> = ({ avatar }) => {
   return (
     <div className="newPost">
       <img className="newPost__avatar" src={avatar} alt="avatar" />
-      <textarea
+      <input
+        type="text"
         className="newPost__input"
         placeholder="چیزی بنویس..."
       />

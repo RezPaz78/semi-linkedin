@@ -1,0 +1,107 @@
+.post {
+  background-color: $white;
+  border-radius: 18px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+
+  &__user {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 1rem;
+
+    &-avatar {
+      height: 4rem;
+      border-radius: 18px;
+    }
+
+    &_info {
+      font-family: Roboto;
+      margin-right: 1rem;
+
+      &-name {
+        margin-bottom: 0.3rem;
+        @include typographyStyle(1rem, bold, normal, $black);
+      }
+
+      &-role {
+        @include typographyStyle(0.8rem, bold, normal, rgba(0, 0, 0, 0.46));
+      }
+    }
+  }
+
+  &__text {
+    font-family: IranYekan;
+    margin-bottom: 1rem;
+    @include typographyStyle(1rem, bold, normal, $black);
+  }
+
+  &__media {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+
+    &-item {
+      height: 15rem;
+      border-radius: 18px;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    &-cv {
+      font-family: IranYekan;
+      margin-right: 1rem;
+      @include typographyStyle(0.8rem, bold, normal, $white);
+      background-color: $blue-color;
+      padding: 5px 15px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    &-save {
+      font-family: IranYekan;
+      padding: 5px 20px;
+      @include typographyStyle(0.8rem, bold, normal, $blue-color);
+      background-color: $white;
+      border: 1px solid $blue-color;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    &_like {
+      position: relative;
+      cursor: pointer;
+
+      &-image {
+        height: 1.5rem;
+      }
+
+      &-count {
+        position: absolute;
+        top: -11px;
+        right: -17px;
+        font-family: Roboto;
+        @include typographyStyle(0.8rem, normal, normal, $white);
+        background-color: $blue-color;
+        border-radius: 8px;
+        direction: ltr;
+        padding: 2px;
+      }
+    }
+  }
+
+  &__tags {
+    direction: ltr;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
