@@ -2,8 +2,8 @@
   direction: rtl;
   background-color: $white;
   display: flex;
-  align-items: center;
-  padding: 1rem;
+  align-items: stretch;
+  // padding: 1rem;
   position: fixed;
   top: 0;
   width: 100%;
@@ -14,6 +14,7 @@
     flex-basis: 30%;
     border-left: 1px solid rgba(0, 0, 0, 0.28);
     text-align: center;
+    padding: 0.5rem;
 
     img {
       height: 2rem;
@@ -22,13 +23,36 @@
 
   &__pages {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: space-between;
     flex-basis: 15%;
     padding-right: 3rem;
 
     img {
       height: 1.3rem;
+    }
+
+    &_container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+
+      &-active {
+        border-bottom: 2px solid $blue-color;
+      }
+    }
+
+    &-notification-count {
+      background-color: red;
+      @include typographyStyle(0.7rem, normal, normal, $white);
+      text-decoration: none;
+      padding: 3px;
+      border-radius: 50%;
+      font-family: Roboto;
+      position: absolute;
+      top: 5px;
+      right: -10px;
     }
   }
 }
